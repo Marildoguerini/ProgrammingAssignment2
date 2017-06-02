@@ -35,7 +35,7 @@ makeCacheMatrix <- function(g = matrix()) {
    		message("getting cached data")
     		return(inv)
   	}
-	data <- x$get()
+	data <- g$get()
 	inv <- solve(data)
   	g$setInverse(inv)
  	inv      
